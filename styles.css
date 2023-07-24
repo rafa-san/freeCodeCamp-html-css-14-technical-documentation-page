@@ -1,34 +1,102 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: auto;
-  width: 95%;
 }
 
-nav {
+hr {
+  background-color: red;
+  height: 6px;
+  margin: 16px auto;
+  width: 100%;
+}
+
+code {
+  background-color: coral;
+}
+
+pre {
+  background-color: pink;
+}
+
+#navbar h1 {
+  border: 1px solid black;
+  font-size: 2.2em;
+  margin: 8px auto;
+  padding: 16px 0;
+  text-align: center;
+  width: 90%;
+}
+
+#navbar ul {
   border: 1px solid green;
-  height: 300px;
+  height: 250px;
+  list-style-type: none;
+  margin: 8px auto;
   overflow: auto;
-
+  width: 90%;
 }
 
-main {
-  background-color: gray;
+#navbar li {
+  padding: 8px;
+  text-decoration: none;
 }
 
-section {
-  border: 1px solid red;
+#navbar li:hover {
+  background-color: powderblue;
+  cursor: pointer;
 }
 
+#navbar a {
+  text-decoration: none;
+}
 
-@media (min-width: 700px) {
-  nav {
-    height: 100%;
+#main-doc {
+  margin: 16px auto;
+  width: 90%;
+}
+
+.main-section header {
+  color: red;
+  font-size: 1.8em;
+  margin: 8px 0;
+}
+
+.main-section h3 {
+  margin: 8px 0;
+}
+
+.main-section p {
+  line-height: 1.8em;
+}
+
+.main-section ul {
+  list-style-position: inside;
+}
+
+@media (min-width: 992px) {
+  #navbar {
+    /* height: 100%; */
     overflow: auto;
-    width: 30%;
+    width: 340px;
     position: fixed;
   }
 
-  main {
-    margin-left: 35%;
+  #navbar ul {
+    height: 100vh;
+  }
+
+  #main-doc {
+    /* background-color: gray; */
+    margin-left: 360px;
+    width: calc(100% - 380px);
   }
 }
