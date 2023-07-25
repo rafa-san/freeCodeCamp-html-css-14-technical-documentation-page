@@ -1,3 +1,9 @@
+:root {
+  --fundo: #efe9e5;
+  --cor_1: #ec7000; 
+  --cor_2: #56504c;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -13,22 +19,34 @@ body {
 }
 
 hr {
-  background-color: red;
-  height: 6px;
-  margin: 16px auto;
+  background-color: var(--cor_1);
+  border: none;
+  height: 4px;
+  margin: 40px auto 16px;
   width: 100%;
 }
 
 code {
-  background-color: coral;
+  background-color: var(--fundo);
+  margin: 4px 0;
+  padding: 3px;
+  display: inline-block;
+}
+
+code.menor {
+  margin: 0;
+  padding: 0 3px;
 }
 
 pre {
-  background-color: pink;
+  background-color: var(--fundo);
+  border-left: 3px solid var(--cor_1);
+  margin: 8px 0;
+  padding: 16px 0;
 }
 
 #navbar h1 {
-  border: 1px solid black;
+  color: var(--cor_1);
   font-size: 2.2em;
   margin: 8px auto;
   padding: 16px 0;
@@ -37,7 +55,7 @@ pre {
 }
 
 #navbar ul {
-  border: 1px solid green;
+  background-color: var(--fundo);
   height: 250px;
   list-style-type: none;
   margin: 8px auto;
@@ -46,48 +64,85 @@ pre {
 }
 
 #navbar li {
-  padding: 8px;
+  padding: 16px 8px;
   text-decoration: none;
 }
 
 #navbar li:hover {
-  background-color: powderblue;
+  background-color: rgba(86, 80, 76, 0.2);
   cursor: pointer;
 }
 
 #navbar a {
+  color: var(--cor_2);
+  font-size: 1.1em;
   text-decoration: none;
 }
 
 #main-doc {
-  margin: 16px auto;
+  margin: 16px auto 40px;
   width: 90%;
 }
 
 .main-section header {
-  color: red;
+  color: var(--cor_1);
   font-size: 1.8em;
   margin: 8px 0;
+  padding: 24px 0 16px;
 }
 
 .main-section h3 {
   margin: 8px 0;
+  padding: 8px 0;
+}
+
+.main-section h4 {
+  margin: 8px 0;
+  padding: 8px 0;
 }
 
 .main-section p {
-  line-height: 1.8em;
+  font-size: 1.02em;
+  line-height: 1.90em;
+}
+
+.main-section .exemplo {
+  font-style: italic;
+  font-weight: 600;
 }
 
 .main-section ul {
+  font-size: 1.02em;
   list-style-position: inside;
+}
+
+.observacao {
+  background-color: var(--cor_1);
+  color: #fff;
+  font-size: 1.1em;
+  line-height: 1.90em;
+  padding: 16px 8px;
+}
+
+.observacao a {
+  color: #fff;
+  font-weight: bolder;
+}
+
+.observacao a:hover {
+  color: var(--fundo);
 }
 
 @media (min-width: 992px) {
   #navbar {
-    /* height: 100%; */
     overflow: auto;
     width: 340px;
     position: fixed;
+  }
+
+  #navbar h1 {
+    background-color: var(--fundo);
+    margin: 0 auto;
   }
 
   #navbar ul {
@@ -95,8 +150,8 @@ pre {
   }
 
   #main-doc {
-    /* background-color: gray; */
-    margin-left: 360px;
-    width: calc(100% - 380px);
+    margin-left: 330px;
+    padding: 0 8px;
+    width: calc(100% - 350px);
   }
 }
