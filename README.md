@@ -4,12 +4,12 @@
 
 Terceiro projeto de estilo livre da trilha **Responsive Web Design**.
 
-Aqui o objetivo é criar uma *technical documentation page*, uma página cujo conteúdo sirva como instrução ou referência para um assunto de sua escolha.
+Aqui o objetivo é criar uma *technical documentation page*, uma página cujo conteúdo sirva como instrução ou referência para um determinado assunto.
 
-Para desenvolver esse trabalho, utilizei minhas próprias anotações do Curso de Algoritmo, do professor Gustavo Guanabara.
+Para desenvolver esse trabalho, utilizei minhas próprias anotações do **Curso de Algoritmo**, do professor Gustavo Guanabara.
 
-As minhas anotações originais desse projeto você pode conferir nesse link do github pages.
+As minhas anotações originais desse curso você pode conferir aqui no [github pages](https://rafa-san.github.io/curso-em-video-algoritmo/).
 
-E nesse outro link, do repositório no GitHub, tem também, além das anotações, os exercícios das vídeo-aulas e os exercícios do PDF.
+E nesse outro link, do [repositório no GitHub](https://github.com/rafa-san/curso-em-video-algoritmo), tem também, além das anotações, os exercícios e exemplos das videoaulas e os exercícios do PDF.
 
-Desenvolvi o HTML desse *Certification Project* seguindo as orientações para atender às condições e ter o projeto aprovado. Já no CSS, utilizei variáveis para trabalhar as cores e para deixar a página responsiva, utilizei somente media queries, não foi preciso trabalhar com flexbox e nem com o grid layout.
+Fiquei muito feliz com o projeto concluído. Foi mais um trabalho no qual pratiquei o conceito de mobile first e layout 100% responsivo.
