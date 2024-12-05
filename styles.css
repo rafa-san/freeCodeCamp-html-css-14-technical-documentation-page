@@ -27,10 +27,10 @@ hr {
 }
 
 code {
+  display: inline-block;
   background-color: var(--fundo);
   margin: 4px 0;
   padding: 3px;
-  display: inline-block;
 }
 
 code.menor {
@@ -135,9 +135,9 @@ pre {
 
 @media (min-width: 992px) {
   #navbar {
+    position: fixed;
     overflow: auto;
     width: 340px;
-    position: fixed;
   }
 
   #navbar h1 {
