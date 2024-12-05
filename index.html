@@ -1,331 +1,329 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Technical Documentation Page</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-  <nav id="navbar">
-    <header>
-      <h1>Algoritmos</h1>
-    </header>
-    <ul>
-      <li><a href="#introducao_aos_algoritmos" class="nav-link">Introdução aos Algoritmos</a></li>
-      <li><a href="#primeiro_algoritmo" class="nav-link">Primeiro Algoritmo</a></li>
-      <li><a href="#comando_de_entrada_e_operadores" class="nav-link">Comando de Entrada e Operadores</a></li>
-      <li><a href="#operadores_logicos_e_relacionais" class="nav-link">Operadores Lógicos e Relacionais</a></li>
-      <li><a href="#estruturas_condicionais_1" class="nav-link">Estruturas Condicionais 1</a></li>
-      <li><a href="#estruturas_condicionais_2" class="nav-link">Estruturas Condicionais 2</a></li>
-      <li><a href="#estruturas_de_repeticao_1" class="nav-link">Estruturas de Repetição 1</a></li>
-      <li><a href="#estruturas_de_repeticao_2" class="nav-link">Estruturas de Repetição 2</a></li>
-      <li><a href="#estruturas_de_repeticao_3" class="nav-link">Estruturas de Repetição 3</a></li>
-      <li><a href="#procedimentos" class="nav-link">Procedimentos</a></li>
-      <li><a href="#funcoes" class="nav-link">Funções</a></li>
-      <li><a href="#vetores" class="nav-link">Vetores</a></li>
-      <li><a href="#matrizes" class="nav-link">Matrizes</a></li>
-    </ul>
-  </nav>
-
-  <main id="main-doc">
-    <section class="main-section" id="introducao_aos_algoritmos">
-      <header>Introdução aos Algoritmos</header>
-      <h3>O que são Algoritmos?</h3>
-      <p><q>Algoritmos são conjuntos de passos finitos e organizados que, quando executados, resolvem um determinado problema.</q></p>
-      <p>Os algoritmos estão presentes em todas as áreas de nossas vidas mais do que podemos imaginar. Os algoritmos fazem parte no nosso dia a dia quando navegamos na internet, assistimos um vídeo no Youtube, jogamos no celular ou num console um jogo qualquer, etc.</p>
-      <p>E aprender algoritmos é simples. No início, tentamos criar rotinas para resolver pequenos problemas ou tarefas, como, por exemplo, somar dois números. Conforme os estudos avançam e nosso conhecimento a respeito do assunto melhora, os problemas ou tarefas a serem resolvidos vão ficando mais complexos.</p>
-    </section>
-    <hr>
-
-    <section class="main-section" id="primeiro_algoritmo">
-      <header>Primeiro Algoritmo</header>
-      <h3>Algoritmos Computacionais</h3>
-      <p>São passos a serem seguidos por um <strong>módulo processador</strong> - qualquer equipamento capaz de efetuar processamento - e seus respectivos <strong>usuários</strong> que, quando executados na ordem correta, conseguem <strong>realizar</strong> determinada <strong>tarefa</strong>. Ou seja, são rotinas também, só que executadas pelo computador ou algum outro módulo processador.</p>
-      
-      <h3>Como são criados os algoritmos computacionais?</h3>
-      <p>Todo algoritmo começa com a lógica de programação. Essa lógica de programação está na nossa cabeça e desenvolvemos ela através do raciocínio lógico.</p>
-      <p>Após desenvolver sua lógica, podemos partir para uma linguagem de programação qualquer e essa linguagem de programação vai ser utilizada para criar um sistema completo, que é o app ou software que o usuário vai usar.</p>
-      
-      <h3>Formas de representar a lógica de programação</h3>
+  <body>
+    <nav id="navbar">
+      <header>
+        <h1>Algoritmos</h1>
+      </header>
       <ul>
-        <li>Fluxograma</li>
-        <li>Diagrama de Nassi Shneiderman</li>
-        <li>Portugol, ou pseudocódigo: É a lógica de programação escrita na sua lingua nativa. Não é uma linguagem de programação,  é apenas uma maneira de representar sua lógica de programação.</li>
+        <li><a href="#introducao_aos_algoritmos" class="nav-link">Introdução aos Algoritmos</a></li>
+        <li><a href="#primeiro_algoritmo" class="nav-link">Primeiro Algoritmo</a></li>
+        <li><a href="#comando_de_entrada_e_operadores" class="nav-link">Comando de Entrada e Operadores</a></li>
+        <li><a href="#operadores_logicos_e_relacionais" class="nav-link">Operadores Lógicos e Relacionais</a></li>
+        <li><a href="#estruturas_condicionais_1" class="nav-link">Estruturas Condicionais 1</a></li>
+        <li><a href="#estruturas_condicionais_2" class="nav-link">Estruturas Condicionais 2</a></li>
+        <li><a href="#estruturas_de_repeticao_1" class="nav-link">Estruturas de Repetição 1</a></li>
+        <li><a href="#estruturas_de_repeticao_2" class="nav-link">Estruturas de Repetição 2</a></li>
+        <li><a href="#estruturas_de_repeticao_3" class="nav-link">Estruturas de Repetição 3</a></li>
+        <li><a href="#procedimentos" class="nav-link">Procedimentos</a></li>
+        <li><a href="#funcoes" class="nav-link">Funções</a></li>
+        <li><a href="#vetores" class="nav-link">Vetores</a></li>
+        <li><a href="#matrizes" class="nav-link">Matrizes</a></li>
       </ul>
+    </nav>
 
-      <h3>Variáveis</h3>
-      <p>Variáveis são espaços na memória que vão guardar valores.</p>
-      <p>E para guardar esses valores, usamos essa estrutura:</p>
-      <code>var identificador: tipo</code>
-      <p><span class="exemplo">Exemplo:</span></p>
-      <code>var bola: brinquedo</code>
-      <p>Lê-se: vou guardar na memória a variável bola, que é um tipo de brinquedo.</p>
-      <p>Ou, em algoritmos...</p>
-      <code>var mensagem: caractere</code>
-      <p>Lê-se: vou guardar na memória a variável mensagem, que é do tipo caractere.</p>
-      
-      <h3>Comando de atribuição</h3>
-      <p>É formado pelo sinal de menor que e o sinal de menos: <code>&lt;-</code></p>
-      <code>mensagem &lt;- "Olá, Mundo!"</code>
-      <p>Lê-se: a variável mensagem recebe o conteúdo que está entre aspas.</p>
+    <main id="main-doc">
+      <section class="main-section" id="introducao_aos_algoritmos">
+        <header>Introdução aos Algoritmos</header>
+        <h3>O que são Algoritmos?</h3>
+        <p><q>Algoritmos são conjuntos de passos finitos e organizados que, quando executados, resolvem um determinado problema.</q></p>
+        <p>Os algoritmos estão presentes em todas as áreas de nossas vidas mais do que podemos imaginar. Os algoritmos fazem parte no nosso dia a dia quando navegamos na internet, assistimos um vídeo no Youtube, jogamos no celular ou num console um jogo qualquer, etc.</p>
+        <p>E aprender algoritmos é simples. No início, tentamos criar rotinas para resolver pequenos problemas ou tarefas, como, por exemplo, somar dois números. Conforme os estudos avançam e nosso conhecimento a respeito do assunto melhora, os problemas ou tarefas a serem resolvidos vão ficando mais complexos.</p>
+      </section>
+      <hr>
 
-      <h3>Comandos de saída</h3>
-      <p>escreva e escreval</p>
-      <p><code>var mensagem: caractere</code> Criei uma variável do tipo caractere.</p>
-      <p><code>mensagem &lt;- "Olá, mundo!"</code> Atribuí um valor a essa variável.</p>
-      <p><code>escreva ("mensagem")</code> Vai escrever na tela: mensagem;</p>
-      <p><code>escreva (mensagem)</code> Vai escrever na tela o <strong>conteúdo</strong> da variável mensagem;</p>
-      <p><code>escreva ("mensagem", mensagem)</code> Vai escrever na tela: mensagem + o conteúdo dessa variável.</p>
-      
-      <h3>Identificadores</h3>
-      <code>mensagem &lt;- "Olá, Mundo!"</code>
-      <p>Regras para o uso de identificadores:</p>
-      <ul>
-        <li>Deve começar com uma <strong>letra</strong></li>
-        <li>Os próximos podem ser <strong>letras</strong> ou <strong>números</strong></li>
-        <li><strong>Não</strong> pode utilizar nenhum <strong>símbolo</strong>, exceto underline <strong>_</strong></li>
-        <li><strong>Não</strong> pode conter <strong>espaços</strong> em branco</li>
-        <li><strong>Não</strong> pode conter letras com <strong>acentos</strong></li>
-        <li><strong>Não</strong> pode ser uma <strong>palavra reservada</strong></li>
-      </ul>
+      <section class="main-section" id="primeiro_algoritmo">
+        <header>Primeiro Algoritmo</header>
+        <h3>Algoritmos Computacionais</h3>
+        <p>São passos a serem seguidos por um <strong>módulo processador</strong> - qualquer equipamento capaz de efetuar processamento - e seus respectivos <strong>usuários</strong> que, quando executados na ordem correta, conseguem <strong>realizar</strong> determinada <strong>tarefa</strong>. Ou seja, são rotinas também, só que executadas pelo computador ou algum outro módulo processador.</p>
+        
+        <h3>Como são criados os algoritmos computacionais?</h3>
+        <p>Todo algoritmo começa com a lógica de programação. Essa lógica de programação está na nossa cabeça e desenvolvemos ela através do raciocínio lógico.</p>
+        <p>Após desenvolver sua lógica, podemos partir para uma linguagem de programação qualquer e essa linguagem de programação vai ser utilizada para criar um sistema completo, que é o app ou software que o usuário vai usar.</p>
+        
+        <h3>Formas de representar a lógica de programação</h3>
+        <ul>
+          <li>Fluxograma</li>
+          <li>Diagrama de Nassi Shneiderman</li>
+          <li>Portugol, ou pseudocódigo: É a lógica de programação escrita na sua lingua nativa. Não é uma linguagem de programação,  é apenas uma maneira de representar sua lógica de programação.</li>
+        </ul>
 
-      <h3>Tipos Primitivos</h3>
-      <p>São tipos de variáveis que a memória do visualg pode guardar:</p>
-      <p>Inteiro <br> <span class="exemplo">Ex:</span> 1, 3, -5</p>
-      <p>Real <br> <span class="exemplo">Ex:</span> 0.5, 5.0, -77.3</p>
-      <p>Caractere <br> <span class="exemplo">Ex:</span> "Gustavo", "Algoritmo", "123"</p>
-      <p>Lógico <br> <span class="exemplo">Ex:</span> verdadeiro, falso</p>
-    </section>
-    <hr>
+        <h3>Variáveis</h3>
+        <p>Variáveis são espaços na memória que vão guardar valores.</p>
+        <p>E para guardar esses valores, usamos essa estrutura:</p>
+        <code>var identificador: tipo</code>
+        <p><span class="exemplo">Exemplo:</span></p>
+        <code>var bola: brinquedo</code>
+        <p>Lê-se: vou guardar na memória a variável bola, que é um tipo de brinquedo.</p>
+        <p>Ou, em algoritmos...</p>
+        <code>var mensagem: caractere</code>
+        <p>Lê-se: vou guardar na memória a variável mensagem, que é do tipo caractere.</p>
+        
+        <h3>Comando de atribuição</h3>
+        <p>É formado pelo sinal de menor que e o sinal de menos: <code>&lt;-</code></p>
+        <code>mensagem &lt;- "Olá, Mundo!"</code>
+        <p>Lê-se: a variável mensagem recebe o conteúdo que está entre aspas.</p>
 
-    <section class="main-section" id="comando_de_entrada_e_operadores">
-      <header>Comando de Entrada e Operadores</header>
-      <h3>Comando de Entrada</h3>
-      <p>Usamos o comando <strong>leia</strong>.</p>
-      <p>Esse comando recebe os valores digitados pelo usuário para guardá-los na memória.</p>
-      <p>
-        <code>escreva ("Digite um número: ")</code> <br>
-        <code>leia (numero)</code>
-      </p>
-    </section>
-    <hr>
+        <h3>Comandos de saída</h3>
+        <p>escreva e escreval</p>
+        <p><code>var mensagem: caractere</code> Criei uma variável do tipo caractere.</p>
+        <p><code>mensagem &lt;- "Olá, mundo!"</code> Atribuí um valor a essa variável.</p>
+        <p><code>escreva ("mensagem")</code> Vai escrever na tela: mensagem;</p>
+        <p><code>escreva (mensagem)</code> Vai escrever na tela o <strong>conteúdo</strong> da variável mensagem;</p>
+        <p><code>escreva ("mensagem", mensagem)</code> Vai escrever na tela: mensagem + o conteúdo dessa variável.</p>
+        
+        <h3>Identificadores</h3>
+        <code>mensagem &lt;- "Olá, Mundo!"</code>
+        <p>Regras para o uso de identificadores:</p>
+        <ul>
+          <li>Deve começar com uma <strong>letra</strong></li>
+          <li>Os próximos podem ser <strong>letras</strong> ou <strong>números</strong></li>
+          <li><strong>Não</strong> pode utilizar nenhum <strong>símbolo</strong>, exceto underline <strong>_</strong></li>
+          <li><strong>Não</strong> pode conter <strong>espaços</strong> em branco</li>
+          <li><strong>Não</strong> pode conter letras com <strong>acentos</strong></li>
+          <li><strong>Não</strong> pode ser uma <strong>palavra reservada</strong></li>
+        </ul>
 
-    <section class="main-section" id="operadores_logicos_e_relacionais">
-      <header>Operadores Lógicos e Relacionais</header>
-      <h3>Operadores Relacionais</h3>
-      <p>Vão criar relações entre variáveis, valores ou expressões e gerar resultados lógicos, <strong>verdadeiro</strong> ou <strong>falso</strong>, sempre.</p>
-      
-      <h3>Operadores Lógicos</h3>
-      <p>
-        e = conjunção <br>
-        ou = disjunção <br>
-        não = negação
-      </p>
-      <p>Não servem para comparar resultados de expressões ou números e sempre retornam resultados lógicos também.</p>
-      <p>Os <strong>operadores relacionais</strong> e os <strong>operadores lógicos</strong> resultam sempre em valores lógicos <strong>VERDADEIRO</strong> ou <strong>FALSO</strong>.</p>
-    </section>
-    <hr>
+        <h3>Tipos Primitivos</h3>
+        <p>São tipos de variáveis que a memória do visualg pode guardar:</p>
+        <p>Inteiro <br> <span class="exemplo">Ex:</span> 1, 3, -5</p>
+        <p>Real <br> <span class="exemplo">Ex:</span> 0.5, 5.0, -77.3</p>
+        <p>Caractere <br> <span class="exemplo">Ex:</span> "Gustavo", "Algoritmo", "123"</p>
+        <p>Lógico <br> <span class="exemplo">Ex:</span> verdadeiro, falso</p>
+      </section>
+      <hr>
 
-    <section class="main-section" id="estruturas_condicionais_1">
-      <header>Estruturas Condicionais 1</header>
-      <h3>Estrutura Condicional Simples</h3>
-      <p>Caso a expressão seja verdadeira, executa-se somente um bloco.</p>
-      <p class="exemplo">Estrutura do comando:</p>
-      <pre>
-        Se (expressao) entao
-            Bloco
-        FimSe</pre>
-      <p><span class="exemplo">Exemplo:</span></p>
-      <p>Se eu tiver dinheiro então, vou fazer uma viagem pra Disney.</p>
-      <p>Uma forma de representar a frase acima em um algoritmo computacional seria essa:</p>
-      <pre>
-        Se (dinheiro >= 10000) entao
+      <section class="main-section" id="comando_de_entrada_e_operadores">
+        <header>Comando de Entrada e Operadores</header>
+        <h3>Comando de Entrada</h3>
+        <p>Usamos o comando <strong>leia</strong>.</p>
+        <p>Esse comando recebe os valores digitados pelo usuário para guardá-los na memória.</p>
+        <p>
+          <code>escreva ("Digite um número: ")</code> <br>
+          <code>leia (numero)</code>
+        </p>
+      </section>
+      <hr>
+
+      <section class="main-section" id="operadores_logicos_e_relacionais">
+        <header>Operadores Lógicos e Relacionais</header>
+        <h3>Operadores Relacionais</h3>
+        <p>Vão criar relações entre variáveis, valores ou expressões e gerar resultados lógicos, <strong>verdadeiro</strong> ou <strong>falso</strong>, sempre.</p>
+        
+        <h3>Operadores Lógicos</h3>
+        <p>
+          e = conjunção <br>
+          ou = disjunção <br>
+          não = negação
+        </p>
+        <p>Não servem para comparar resultados de expressões ou números e sempre retornam resultados lógicos também.</p>
+        <p>Os <strong>operadores relacionais</strong> e os <strong>operadores lógicos</strong> resultam sempre em valores lógicos <strong>VERDADEIRO</strong> ou <strong>FALSO</strong>.</p>
+      </section>
+      <hr>
+
+      <section class="main-section" id="estruturas_condicionais_1">
+        <header>Estruturas Condicionais 1</header>
+        <h3>Estrutura Condicional Simples</h3>
+        <p>Caso a expressão seja verdadeira, executa-se somente um bloco.</p>
+        <p class="exemplo">Estrutura do comando:</p>
+        <pre>
+          Se (expressao) entao
+              Bloco
+          FimSe</pre>
+        <p><span class="exemplo">Exemplo:</span></p>
+        <p>Se eu tiver dinheiro então, vou fazer uma viagem pra Disney.</p>
+        <p>Uma forma de representar a frase acima em um algoritmo computacional seria essa:</p>
+        <pre>
+          Se (dinheiro >= 10000) entao
+              Escreva ("Partiu Disney")
+          FimSe</pre>
+
+        <h3>Estrutura Condicional Composta</h3>
+        <p>Caso a expressão seja verdadeira, executa-se um bloco, caso contrário, se for falsa, executa-se outro bloco.</p>
+        <p class="exemplo">Estrutura do comando:</p>
+        <pre>
+          Se (expressão) entao
+            Bloco A
+          senao
+            Bloco B
+          FimSe</pre>
+        <p><span class="exemplo">Exemplo:</span></p>
+        <p>
+          Se eu tiver dinheiro, então vou fazer uma viagem pra Disney. Senão, vou ficar em casa.</p>
+        <p>Representando a frase acima em algoritmo computacional:</p>
+        <pre>
+          Se (dinheiro >= 10000) entao
             Escreva ("Partiu Disney")
-        FimSe</pre>
+          senao
+            Escreva ("#chateado")
+          FimSe</pre>
+      </section>
+      <hr>
 
-      <h3>Estrutura Condicional Composta</h3>
-      <p>Caso a expressão seja verdadeira, executa-se um bloco, caso contrário, se for falsa, executa-se outro bloco.</p>
-      <p class="exemplo">Estrutura do comando:</p>
-      <pre>
-        Se (expressão) entao
-           Bloco A
-        senao
-           Bloco B
-        FimSe</pre>
-      <p><span class="exemplo">Exemplo:</span></p>
-      <p>
-        Se eu tiver dinheiro, então vou fazer uma viagem pra Disney. Senão, vou ficar em casa.</p>
-      <p>Representando a frase acima em algoritmo computacional:</p>
-      <pre>
-        Se (dinheiro >= 10000) entao
-           Escreva ("Partiu Disney")
-        senao
-           Escreva ("#chateado")
-        FimSe</pre>
-    </section>
-    <hr>
+      <section class="main-section" id="estruturas_condicionais_2">
+        <header>Estruturas Condicionais 2</header>
+        <h3>Estrutura Condicional Aninhada</h3>
+        <p class="exemplo">Estrutura do comando:</p>
+        <pre>
+          Se (situação 1) entao
+            Bloco A
+          senao
+            Se (situação 2) entao
+                Bloco B
+            senao
+                Bloco C
+            FimSe
+          FimSe</pre>
+        <p><span class="exemplo">Exemplo:</span></p>
+        <p>Se eu tiver muito dinheiro, então vou fazer uma viagem pra Disney. Senão, se tiver uma graninha, então vou visitar minha cidade natal, senão, aí sim, vou ficar em casa.</p>
+        <p>Agora, vamos usar uma linguagem formal de algoritmo para descrever o exemplo acima:</p>
+        <pre>
+          Se (dinheiro >= 10000) entao
+            Escreva ("Partiu Disney")
+          senao
+            Se (dinheiro >= 5000) e (dinheiro &lt; 10000) entao
+                Escreva ("Visitar família")
+            senao
+                Escreva ("#chateado")
+            FimSe
+          FimSe</pre>
 
-    <section class="main-section" id="estruturas_condicionais_2">
-      <header>Estruturas Condicionais 2</header>
-      <h3>Estrutura Condicional Aninhada</h3>
-      <p class="exemplo">Estrutura do comando:</p>
-      <pre>
-        Se (situação 1) entao
-           Bloco A
-        senao
-           Se (situação 2) entao
-              Bloco B
-           senao
-              Bloco C
-           FimSe
-        FimSe</pre>
-      <p><span class="exemplo">Exemplo:</span></p>
-      <p>Se eu tiver muito dinheiro, então vou fazer uma viagem pra Disney. Senão, se tiver uma graninha, então vou visitar minha cidade natal, senão, aí sim, vou ficar em casa.</p>
-      <p>Agora, vamos usar uma linguagem formal de algoritmo para descrever o exemplo acima:</p>
-      <pre>
-        Se (dinheiro >= 10000) entao
-           Escreva ("Partiu Disney")
-        senao
-           Se (dinheiro >= 5000) e (dinheiro &lt; 10000) entao
-              Escreva ("Visitar família")
-           senao
-              Escreva ("#chateado")
-           FimSe
-        FimSe</pre>
+        <h3>Estrutura de Múltipla Escolha | Escolha...caso</h3>
+        <p>Com a estrutura Escolha...caso, você pode testar uma série de valores distintos dentro de uma mesma variável e executar blocos específicos para cada caso.</p>
+        <p class="exemplo">Estrutura do comando:</p>
+        <pre>
+          Escolha (variável)
+            caso valor
+                Bloco A
+            caso valor
+                Bloco B
+            caso valor
+                Bloco C
+            OutroCaso
+                Bloco D
+          FimEscolha</pre>
+      </section>
+      <hr>
 
-      <h3>Estrutura de Múltipla Escolha | Escolha...caso</h3>
-      <p>Com a estrutura Escolha...caso, você pode testar uma série de valores distintos dentro de uma mesma variável e executar blocos específicos para cada caso.</p>
-      <p class="exemplo">Estrutura do comando:</p>
-      <pre>
-        Escolha (variável)
-           caso valor
-              Bloco A
-           caso valor
-              Bloco B
-           caso valor
-              Bloco C
-           OutroCaso
-              Bloco D
-        FimEscolha</pre>
-    </section>
-    <hr>
+      <section class="main-section" id="estruturas_de_repeticao_1">
+        <header>Estruturas de Repetição 1</header>
+        <p>A estrutura de repetição <strong>enquanto</strong> vai permitir que você execute blocos de comandos várias vezes e simplificar a forma de representar lógicas que vão construir programas. Nessa estrutura, o teste lógico é feito no início. Perceba também que precisamos do operador lógico <strong>não</strong> para criar o loop.</p>
+        <p class="exemplo">Estrutura:</p>
+        <pre>
+          Enquanto (expressão) faca
+            bloco
+          FimEnquanto</pre>
+        <pre>
+          Enquanto (não arrumar o quarto)* faca
+            castigo
+          FimEnquanto</pre>
+        <p><small>*Se arrumar o quarto, estará liberado e sairá da repetição.</small></p>
+      </section>
+      <hr>
 
-    <section class="main-section" id="estruturas_de_repeticao_1">
-      <header>Estruturas de Repetição 1</header>
-      <p>A estrutura de repetição <strong>enquanto</strong> vai permitir que você execute blocos de comandos várias vezes e simplificar a forma de representar lógicas que vão construir programas. Nessa estrutura, o teste lógico é feito no início. Perceba também que precisamos do operador lógico <strong>não</strong> para criar o loop.</p>
-      <p class="exemplo">Estrutura:</p>
-      <pre>
-        Enquanto (expressão) faca
-          bloco
-        FimEnquanto</pre>
-      <pre>
-        Enquanto (não arrumar o quarto)* faca
-          castigo
-        FimEnquanto</pre>
-      <p><small>*Se arrumar o quarto, estará liberado e sairá da repetição.</small></p>
-    </section>
-    <hr>
+      <section class="main-section" id="estruturas_de_repeticao_2">
+        <header>Estruturas de Repetição 2</header>
+        <p>A estrutura <strong>repita</strong> é uma estrutura de repetição com teste lógico no final, o que permite que você execute o bloco interno pelo menos uma vez, independente do resultado do teste. Repita...até é a inversão lógica da estrutura enquanto...faça.</p>
+        <p class="exemplo">Estrutura:</p>
+        <pre>
+          repita
+            bloco
+          ate (expressao)
+          repita
+            castigo
+          Até (arrumar o quarto)*</pre>
+        <p><small>*Se arrumar o quarto, estará liberado e sairá da repetição.</small></p>
+      </section>
+      <hr>
 
-    <section class="main-section" id="estruturas_de_repeticao_2">
-      <header>Estruturas de Repetição 2</header>
-      <p>A estrutura <strong>repita</strong> é uma estrutura de repetição com teste lógico no final, o que permite que você execute o bloco interno pelo menos uma vez, independente do resultado do teste. Repita...até é a inversão lógica da estrutura enquanto...faça.</p>
-      <p class="exemplo">Estrutura:</p>
-      <pre>
-        repita
-          bloco
-        ate (expressao)
-        repita
-          castigo
-        Até (arrumar o quarto)*</pre>
-      <p><small>*Se arrumar o quarto, estará liberado e sairá da repetição.</small></p>
-    </section>
-    <hr>
+      <section class="main-section" id="estruturas_de_repeticao_3">
+        <header>Estruturas de Repetição 3</header>
+        <p>A estrutura <strong>para</strong> é uma estrutura de repetição com variável de controle, o que permite que você execute o bloco interno uma quantidade determinada de vezes.</p>
+        <p>Essa estrutura já vem com a atribuição e com o incremento incluídos.</p>
+        <p>O [passo salto] é opcional. O default dele é 1.</p>
+        <p>O <strong>para</strong> é diferente das outras duas estruturas de repetição por não precisar utilizar expressões lógicas para resolver o problema.</p>
+        <p>Um ponto de atenção: não utilizar essa estrutura quando não souber o número de repetições.</p>
+      </section>
+      <hr>
+  
+      <section class="main-section" id="procedimentos">
+        <header>Procedimentos</header>
+        <p>Procedimento é um tipo de <strong>rotina</strong>.</p>
+        <h3>Passagem de Parâmetro</h3>
+        
+        <h4>Por valor</h4>
+        <p>Quando a passagem é por valor, apenas o valor é passado - ou copiado - pra dentro do parâmetro do procedimento. Os valores iniciais, no programa principal, não são alterados.</p>
+        <p>Esse tipo de passagem não modifica em nada a variável do programa principal.</p>
+        
+        <h4>Por Referência</h4>
+        <p>Quando a passagem se dá por referência, o parâmetro do procedimento tem uma referência automática ao valor da variável original. Qualquer alteração no parâmetro <strong>vai afetar</strong> a variável original, no programa principal.</p>
+        <p>Utiliza-se, nesse caso, a palavra <code class="menor">var</code> para sinalizar que a passagem de parâmetro é por referência. O <code class="menor">var</code> não que dizer que você esteja declarando uma variável, e sim que você está fazendo uma referência às variáveis do programa principal.</p>
+        
+        <h4>Escopo</h4>
+        <p>Escopo é o local onde uma determinada variável vai funcionar.</p>
+      </section>
+      <hr>
 
-    <section class="main-section" id="estruturas_de_repeticao_3">
-      <header>Estruturas de Repetição 3</header>
-      <p>A estrutura <strong>para</strong> é uma estrutura de repetição com variável de controle, o que permite que você execute o bloco interno uma quantidade determinada de vezes.</p>
-      <p>Essa estrutura já vem com a atribuição e com o incremento incluídos.</p>
-      <p>O [passo salto] é opcional. O default dele é 1.</p>
-      <p>O <strong>para</strong> é diferente das outras duas estruturas de repetição por não precisar utilizar expressões lógicas para resolver o problema.</p>
-      <p>Um ponto de atenção: não utilizar essa estrutura quando não souber o número de repetições.</p>
-    </section>
-    <hr>
- 
-    <section class="main-section" id="procedimentos">
-      <header>Procedimentos</header>
-      <p>Procedimento é um tipo de <strong>rotina</strong>.</p>
-      <h3>Passagem de Parâmetro</h3>
+      <section class="main-section" id="funcoes">
+        <header>Funções</header>
+        <p>Função é um outro tipo de rotina. A principal diferença entre usar funcões e procedimentos é que durante um procedimento não tem como retornar um valor diretamente no programa principal, e durante uma função você tem um valor de retorno, ou seja, é possível retornar um resultado.</p>
+        <h3>Notas</h3>
+        <p>
+          No exemplo abaixo: <br>
+          <code>funcao soma (a, b: inteiro) : inteiro</code> <br>
+          O último <code class="menor">inteiro</code> quer dizer que o valor de retorno que essa função dará é também um valor inteiro.
+        </p>
+        <p>
+          Já nesse outro exemplo: <br>
+          <code>funcao parOuImpar (v: inteiro): caractere</code> <br>
+          A função <code class="menor">parOuImpar</code> vai receber uma variável do tipo inteiro e retornar um valor do tipo caractere.
+        </p>
+        <p>O uso de parênteses no <code class="menor">retorne</code> da função é opcional.</p>
+        <p>Ao trabalhar com função, o ideal é não escrever nada dentro do corpo da função, e sim retornar ao algoritmo principal pra que você possa escrever da maneira que achar melhor.</p>
+      </section>
+      <hr>
+
+      <section class="main-section" id="vetores">
+        <header>Vetores</header>
+        <h3>Definição</h3>
+        <p>Vetores são <strong>Variáveis Compostas Homogêneas Unidimensionais</strong>, pois conseguem armazenar vários valores de um mesmo tipo em uma mesma variável.</p>
+        <p>Um vetor pode ter vários espaços internos, identificados por índices. A maneira correta de se declarar um vetor está na linha a seguir:</p>
+        <code>var v: vetor[1..10] de inteiro</code>
+        <p>A linha acima vai declarar uma variável v com 10 posições. Para inserir um valor dentro do vetor acima, podemos realizar a seguinte atribuição:</p>
+        <code>v[1] &lt;- 100</code>
+        <p>Na linha acima, o valor 100 será colocado na posição 1 do vetor v.</p>
+        <p>Podemos também, permitir que o usuário digite os valores de cada posição, usando uma estrutura de repetição qualquer. Por exemplo:</p>
+        <pre>
+          Para contador &lt;- 1 ate 10 faca
+          Escreva ("Digite um valor: ")
+          Leia v[contador]
+          FimPara</pre>
+        <p>A variável contador, do trecho acima, será um valor inteiro que vai contar cada uma das 10 posições. O usuário digitará cada um dos 10 valores e eles serão armazenados no vetor.</p>
+      </section>
+      <hr>
       
-      <h4>Por valor</h4>
-      <p>Quando a passagem é por valor, apenas o valor é passado - ou copiado - pra dentro do parâmetro do procedimento. Os valores iniciais, no programa principal, não são alterados.</p>
-      <p>Esse tipo de passagem não modifica em nada a variável do programa principal.</p>
-      
-      <h4>Por Referência</h4>
-      <p>Quando a passagem se dá por referência, o parâmetro do procedimento tem uma referência automática ao valor da variável original. Qualquer alteração no parâmetro <strong>vai afetar</strong> a variável original, no programa principal.</p>
-      <p>Utiliza-se, nesse caso, a palavra <code class="menor">var</code> para sinalizar que a passagem de parâmetro é por referência. O <code class="menor">var</code> não que dizer que você esteja declarando uma variável, e sim que você está fazendo uma referência às variáveis do programa principal.</p>
-      
-      <h4>Escopo</h4>
-      <p>Escopo é o local onde uma determinada variável vai funcionar.</p>
-    </section>
-    <hr>
+      <section class="main-section" id="matrizes">
+        <header>Matrizes</header>
+        <h3>Definição</h3>
+        <p>Matrizes são <strong>Variáveis Compostas Homogêneas Multidimensionais</strong>. Ao contrário dos vetores, para identificar um elemento em uma matriz é necessário usar mais de um índice (na maioria dos casos, apenas dois).</p>
+        <p>Para declarar uma matriz 3x3, podemos usar a linha:</p>
+        <code>m: vetor[1..3, 1..3] de inteiro</code>
+        <p>Para referenciar um elemento da matriz declarada acima, fazemos assim:</p>
+        <code>m[2,3] &lt;- 5</code>
+        <p>O número 5 ficará, dentro dessa matriz, na linha 2 e na coluna 3.</p>
+      </section>
+      <hr>
 
-    <section class="main-section" id="funcoes">
-      <header>Funções</header>
-      <p>Função é um outro tipo de rotina. A principal diferença entre usar funcões e procedimentos é que durante um procedimento não tem como retornar um valor diretamente no programa principal, e durante uma função você tem um valor de retorno, ou seja, é possível retornar um resultado.</p>
-      <h3>Notas</h3>
-      <p>
-        No exemplo abaixo: <br>
-        <code>funcao soma (a, b: inteiro) : inteiro</code> <br>
-        O último <code class="menor">inteiro</code> quer dizer que o valor de retorno que essa função dará é também um valor inteiro.
-      </p>
-      <p>
-        Já nesse outro exemplo: <br>
-        <code>funcao parOuImpar (v: inteiro): caractere</code> <br>
-        A função <code class="menor">parOuImpar</code> vai receber uma variável do tipo inteiro e retornar um valor do tipo caractere.
-      </p>
-      <p>O uso de parênteses no <code class="menor">retorne</code> da função é opcional.</p>
-      <p>Ao trabalhar com função, o ideal é não escrever nada dentro do corpo da função, e sim retornar ao algoritmo principal pra que você possa escrever da maneira que achar melhor.</p>
-    </section>
-    <hr>
-
-    <section class="main-section" id="vetores">
-      <header>Vetores</header>
-      <h3>Definição</h3>
-      <p>Vetores são <strong>Variáveis Compostas Homogêneas Unidimensionais</strong>, pois conseguem armazenar vários valores de um mesmo tipo em uma mesma variável.</p>
-      <p>Um vetor pode ter vários espaços internos, identificados por índices. A maneira correta de se declarar um vetor está na linha a seguir:</p>
-      <code>var v: vetor[1..10] de inteiro</code>
-      <p>A linha acima vai declarar uma variável v com 10 posições. Para inserir um valor dentro do vetor acima, podemos realizar a seguinte atribuição:</p>
-      <code>v[1] &lt;- 100</code>
-      <p>Na linha acima, o valor 100 será colocado na posição 1 do vetor v.</p>
-      <p>Podemos também, permitir que o usuário digite os valores de cada posição, usando uma estrutura de repetição qualquer. Por exemplo:</p>
-      <pre>
-        Para contador &lt;- 1 ate 10 faca
-        Escreva ("Digite um valor: ")
-        Leia v[contador]
-        FimPara</pre>
-      <p>A variável contador, do trecho acima, será um valor inteiro que vai contar cada uma das 10 posições. O usuário digitará cada um dos 10 valores e eles serão armazenados no vetor.</p>
-    </section>
-    <hr>
-    
-    <section class="main-section" id="matrizes">
-      <header>Matrizes</header>
-      <h3>Definição</h3>
-      <p>Matrizes são <strong>Variáveis Compostas Homogêneas Multidimensionais</strong>. Ao contrário dos vetores, para identificar um elemento em uma matriz é necessário usar mais de um índice (na maioria dos casos, apenas dois).</p>
-      <p>Para declarar uma matriz 3x3, podemos usar a linha:</p>
-      <code>m: vetor[1..3, 1..3] de inteiro</code>
-      <p>Para referenciar um elemento da matriz declarada acima, fazemos assim:</p>
-      <code>m[2,3] &lt;- 5</code>
-      <p>O número 5 ficará, dentro dessa matriz, na linha 2 e na coluna 3.</p>
-    </section>
-    <hr>
-
-    <section class="observacao">
-      <p>O material acima faz parte das minhas anotações do <strong>Curso de Algorítimo</strong>, do site <a href="https://www.cursoemvideo.com/curso/curso-de-algoritmo/" target="_blank">Curso em Vídeo</a>.</p>
-    </section>
-  </main>
-</body>
-
+      <section class="observacao">
+        <p>O material acima faz parte das minhas anotações do <strong>Curso de Algorítimo</strong>, do site <a href="https://www.cursoemvideo.com/curso/curso-de-algoritmo/" target="_blank">Curso em Vídeo</a>.</p>
+      </section>
+    </main>
+  </body>
 </html>
