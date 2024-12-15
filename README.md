@@ -8,7 +8,9 @@ Desenvolver uma *technical documentation page* (página de documentação técni
 ## 2️⃣ Descrição
 Este é o terceiro desafio no formato **Certification Project** da trilha **Responsive Web Design Certification**
 
-Os **Certification Project** exigem que o desenvolvimento seja realizado de forma independente, sem mentoria direta. Para que o projeto seja aprovado, é necessário cumprir critérios específicos estabelecidos pela plataforma, principalmente relacionados à estrutura HTML. No entanto, há total liberdade para criar o design (CSS), permitindo dar um toque pessoal à página.
+Os **Certification Project** exigem que o desenvolvimento seja realizado de forma independente, sem mentoria direta.
+
+Para que o projeto seja aprovado, é necessário cumprir critérios específicos estabelecidos pela plataforma, principalmente relacionados à estrutura HTML. No entanto, há total liberdade para criar o design (CSS), permitindo dar um toque pessoal à página.
 
 O principal objetivo desse formato é consolidar os conhecimentos adquiridos ao longo dos cursos anteriores, proporcionando uma experiência prática bastante significativa.
 
@@ -18,7 +20,7 @@ Seguindo as diretrizes do **freeCodeCamp**, este projeto foi desenvolvido de for
 ## 3️⃣ Principais Modificações
 O exemplo original fornecido pela plataforma aborda explicações sobre JavaScript.
 
-Para desenvolver minha versão, utilizei anotações próprias do **Curso de Algoritmo**, ministrado pelo professor Gustavo Guanabara, da plataforma de ensino **Curso em Vídeo**.
+Para desenvolver esta versão, utilizei minhas próprias anotações do **Curso de Algoritmo**, ministrado pelo professor **Gustavo Guanabara**, da plataforma de ensino **Curso em Vídeo**.
 
 Meu repositório referente a este curso, com anotações, exemplos, exercícios e prints encontra-se no link abaixo:
 - <a href="https://github.com/rafa-san/curso-em-video-algoritmo" target="_blank">Curso de Algoritmo 🔗</a>
@@ -27,7 +29,7 @@ Destaques da minha página:
 
 - **HTML Bookmarks:** Adicionei âncoras internas para facilitar a navegação e permitir que os leitores acessem rapidamente seções específicas da página.
 - **Variáveis CSS (root):** Criei variáveis para definir e reutilizar cores, facilitando ajustes no design.
-- **Paleta de Cores Personalizada:** Desenvolvi uma paleta própria para deixar a página visualmente única.
+- **Paleta de Cores Personalizada:** Paleta de cores própria criada com **Adobe Color** e **ColorSpace**.
 - **Design Responsivo:** Implementei o conceito Mobile First, priorizando a experiência em telas menores e adaptando o layout para dispositivos maiores.
 
 ## 4️⃣ Tecnologias Utilizadas
@@ -43,7 +45,7 @@ Destaques da minha página:
 </div>
 
 ## 5️⃣ Créditos
-Agradeço ao freeCodeCamp por oferecer cursos gratuitos de altíssima qualidade, que não apenas ampliaram meus conhecimentos, mas também contribuíram muito para a construção do meu portfólio.
+Agradeço ao **freeCodeCamp** por oferecer cursos gratuitos de altíssima qualidade, que não apenas ampliaram meus conhecimentos, mas também contribuíram muito para a construção do meu portfólio.
 - <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp 🔗</a>
 
 Tutoriais consultados: 
